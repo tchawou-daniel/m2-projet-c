@@ -6,9 +6,21 @@ import 'character.dart';
 class NewScreenUn extends StatelessWidget {
 
 
-  const NewScreenUn({Key? key,  required this.maVariable}) : super(key: key);
+   NewScreenUn({Key? key,  required this.maVariable}) : super(key: key);
 
   final Character maVariable;
+
+  double custFontSize = 18;
+
+  Text custText(name,custFontSize,[FontWeight fontWeight=FontWeight.normal,Color color= const Color.fromRGBO(224, 255, 51, 1)]){
+    return Text(name,
+        style: TextStyle(
+          fontSize: custFontSize,
+          fontWeight: fontWeight,
+          color: color,
+        ));
+  }
+
 
   @override
   Widget build(BuildContext context) => Scaffold(
@@ -18,9 +30,10 @@ class NewScreenUn extends StatelessWidget {
 
     ),
     body: Container(
-
+      padding: EdgeInsets.all(10.0),
       color: Color.fromRGBO(61, 69, 90, 1),
       child: Column(
+
         children: [
           Container(
             //padding: EdgeInsets.all(10.0),
@@ -58,41 +71,40 @@ class NewScreenUn extends StatelessWidget {
         Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text("Status"),
-              Text(maVariable.status??"")
+              custText("Status",custFontSize,FontWeight.bold),
+              custText(maVariable.status??"",custFontSize),
             ],
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text("Species"),
-            Text(maVariable.species??"")
+            custText("Species",custFontSize,FontWeight.bold),
+            custText(maVariable.species??"",custFontSize),
           ],
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text("Gender"),
-            Text(maVariable.gender??"")
+            custText("Gender",custFontSize,FontWeight.bold),
+            custText(maVariable.gender??"",custFontSize),
           ],
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text("Origin"),
-            Text(maVariable.origin!.name??"unknown")
+            custText("Origin",custFontSize,FontWeight.bold),
+            custText(maVariable.origin!.name??"unknown",custFontSize),
           ],
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text("LastLocation"),
-            Text(maVariable.location!.name??"unknown")
+            custText("LastLocation",custFontSize,FontWeight.bold),
+            custText(maVariable.location!.name??"unknown",custFontSize),
           ],
         ),
       ]),));
 }
-
 
 
 
