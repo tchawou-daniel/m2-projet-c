@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "200608179573",
+    "project_id": "m2test-9f708",
+    "storage_bucket": "m2test-9f708.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:200608179573:android:1156e2d692ecffed35df3c",
+        "android_client_info": {
+          "package_name": "com.mdeuxflutter.m2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "200608179573-j78t5t72b498it0n6eumqnts9igtp7li.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDQ_0m1bz1xo-GKIHFqMXAhpwvatV1sXo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "200608179573-j78t5t72b498it0n6eumqnts9igtp7li.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
